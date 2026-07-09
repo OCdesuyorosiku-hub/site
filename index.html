@@ -848,3 +848,53 @@ console.log("まとめサイト風デモページ");
 </body>
 
 </html>
+
+/* スマホ・タブレット対応 */
+@media screen and (max-width: 768px){
+
+.container{
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:10px;
+}
+
+.article-title{
+    font-size:28px;
+}
+
+.hero{
+    height:180px;
+    font-size:32px;
+}
+
+main{
+    padding:20px;
+}
+
+.section-title{
+    font-size:24px;
+}
+
+.profile-table th,
+.profile-table td{
+    display:block;
+    width:100%;
+}
+
+.profile-table tr{
+    margin-bottom:15px;
+    display:block;
+}
+
+.share{
+    flex-direction:column;
+}
+
+footer div{
+    grid-template-columns:1fr !important;
+}
+
+}
